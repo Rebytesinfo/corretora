@@ -12,7 +12,7 @@ function enviarWhats(event) {
               `Interesse: ${assunto}%0A` +
               `Mensagem: ${mensagem}`;
 
-  let numero = "5531992835225"; // 🔴 TROQUE PELO SEU NÚMERO
+  let numero = "5531975809466"; // 🔴 TROQUE PELO SEU NÚMERO
 
   window.open(`https://wa.me/${numero}?text=${texto}`, "_blank");
 }
