@@ -24,17 +24,47 @@ body {
     justify-content: center;
 }
 
-nav a {
+nav {
+  background: #333;
+  padding: 10px;
+}
+
+nav a, summary {
   color: white;
-  padding: 15px;
+  margin: 10px;
   text-decoration: none;
-  font-weight: bold;
+  cursor: pointer;
 }
 
-nav a:hover {
-  background: #1abc9c;
+/* remove a seta padrão */
+summary {
+  list-style: none;
 }
 
+summary::-webkit-details-marker {
+  display: none;
+}
+
+/* estilo do menu */
+.menu {
+  display: inline-block;
+  position: relative;
+}
+
+.submenu {
+  position: absolute;
+  top: 100%;   /* fica logo abaixo */
+  left: 0;     /* alinhado à esquerda */
+  background: white;
+  min-width: 150px;
+  border-radius: 5px;
+}
+
+.submenu a {
+  display: block;
+  color: black;
+  padding: 10px;
+}
     .card-content {
       padding: 15px;
     }
